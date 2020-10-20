@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.ListTabunganActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:contentPadding="20dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/warnaPutih"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:textColor="@color/warnaHitam"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="Kas Koperasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/edKasKoperasi"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_icon_uang"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="Nominal"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rvTabungan"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvData"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Tidak Ada Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

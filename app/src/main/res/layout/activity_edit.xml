@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".Menu.EditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:contentPadding="20dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/warnaPutih"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/edNama"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="Nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <EditText
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/edHp"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="No Handphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/edTanggalLahir"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="Tanggal Lahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <EditText
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/edAlamat"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:maxLines="4"
+                        android:ellipsize="end"
+                        android:hint="Alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <EditText
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/edPekerjaan"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_edlogin"
+                        android:drawablePadding="16dp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="Pekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <Button
+                        android:layout_marginVertical="10dp"
+                        android:textColor="@color/warnaPutih"
+                        android:textSize="17dp"
+                        android:layout_gravity="end"
+                        android:layout_width="130dp"
+                        android:background="@drawable/costum_button"
+                        android:layout_height="35dp"
+                        android:id="@+id/btEdit"
+                        android:text="Edit"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

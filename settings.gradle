@@ -1,0 +1,2 @@
+rootProject.name='Koperasi -Admin'
+include ':app'
